@@ -1,0 +1,17 @@
+type AlgebraFactory_Pool {
+	id: ID!
+	token0: String!
+	token1: String!
+	pool: String!
+}
+
+type AlgebraPool_Swap {
+	id: ID!
+	sender: String!
+	tx: String!
+	blockNumber: Int!
+	amount0: BigInt!
+	amount1: BigInt!
+	price: BigInt!
+	liquidity: BigInt!
+}

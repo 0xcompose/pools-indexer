@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=./node_modules/envio/evm.schema.json
+name: pools-indexer
+networks:
+- id: 122
+  rpc: https://rpc.fuse.io
+  start_block: 35000000
+  contracts:
+  # - name: AlgebraFactory
+  #   address:
+  #   - 0xccEdb990abBf0606Cf47e7C6A26e419931c7dc1F
+  #   handler: src/FactoryHandlers.ts
+  #   events:
+  #   - event: Pool(address indexed token0, address indexed token1, address pool)
+  - name: AlgebraPool
+    address:
+    - 0x677409B2393E2ca19b454fB904F5E634E21D3D89
+    handler: src/SwapHandler.ts
+    events:
+      - event: Swap(address indexed sender, address indexed recipient, int256 amount0, int256 amount1, uint160 price, uint128 liquidity, int24 tick, uint24 overrideFee, uint24 pluginFee)
+        field_selection: 
+          transaction_fields:
+            - hash
+            - from
+unordered_multichain_mode: true
