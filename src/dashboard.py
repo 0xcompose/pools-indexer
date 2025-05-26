@@ -226,7 +226,7 @@ def create_dashboard():
     fig.update_yaxes(title_text="Number of Swaps", row=5, col=1)
     
     # Save as HTML
-    fig.write_html("swaps_dashboard.html")
+    fig.write_html("index.html")
     print("Dashboard saved as swaps_dashboard.html")
 
 if __name__ == "__main__":
