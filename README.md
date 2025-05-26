@@ -1,6 +1,6 @@
 ## Envio Indexer
 
-*Please refer to the [documentation website](https://docs.envio.dev) for a thorough guide on all [Envio](https://envio.dev) indexer features*
+_Please refer to the [documentation website](https://docs.envio.dev) for a thorough guide on all [Envio](https://envio.dev) indexer features_
 
 ### Run
 
@@ -21,3 +21,9 @@ pnpm codegen
 - [Node.js (use v18 or newer)](https://nodejs.org/en/download/current)
 - [pnpm (use v8 or newer)](https://pnpm.io/installation)
 - [Docker desktop](https://www.docker.com/products/docker-desktop/)
+
+### Dashboard
+
+The dashboard shows various metrics about pool swaps:
+
+<iframe src="index.html" width="100%" height="1800px" frameborder="0"></iframe>
